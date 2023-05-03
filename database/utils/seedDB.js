@@ -7,8 +7,14 @@ const seedDB = async () => {
 		department: "Computer Science"
 	});
 	const dummyInstructor2 = await Instructor.create({
-		firstname: "Kim",
-		lastname: "Kardashian"
+		firstname: "Jessie",
+		lastname: "Lin",
+        department: "Computer Science",
+	});
+	const dummyInstructor3 = await Instructor.create({
+		firstname: "Ethan",
+		lastname: "Li",
+        department: "Nursing",
 	});
 
 	const dummyCourse = await Course.create({
@@ -17,7 +23,15 @@ const seedDB = async () => {
         timeslot: "W 5:35 - 8:15 PM"
 	});
 
+    const dummyCourse2 = await Course.create({
+		title: "BIO 100",
+        location: "C102",
+        timeslot: "W 5:35 - 8:15 PM"
+	});
+
 	await dummyCourse.setInstructor(dummyInstructor);
+    await dummyCourse.setInstructor(dummyInstructor2);
+    await dummyCourse2.setInstructor(dummyInstructor3);
 	
 }
 

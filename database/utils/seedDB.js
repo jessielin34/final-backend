@@ -38,7 +38,6 @@ const seedDB = async () => {
     await dummyCourse.setInstructor(dummyInstructor);
     await dummyCourse.setInstructor(dummyInstructor2);
     await dummyCourse2.setInstructor(dummyInstructor3);
-    await dummyCourse3.setInstructor(dummyInstructor3);
 
 	
 }

@@ -29,9 +29,10 @@ const seedDB = async () => {
         timeslot: "W 5:35 - 8:15 PM"
 	});
 
-	await dummyCourse.setInstructor(dummyInstructor);
+    await dummyCourse.setInstructor(dummyInstructor);
     await dummyCourse.setInstructor(dummyInstructor2);
     await dummyCourse2.setInstructor(dummyInstructor3);
+
 	
 }
 
